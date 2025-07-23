@@ -82,6 +82,10 @@
             box-sizing: border-box;
         }
         
+        html {
+            font-size: 16px;
+        }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
             background-color: var(--background-gray);
@@ -228,7 +232,8 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 900px;
+            width: 100%;
             margin: 0 auto;
             padding: 20px;
         }
@@ -258,12 +263,12 @@
         }
         
         .game-section {
-            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-            border-radius: var(--border-radius);
-            box-shadow: 0 8px 32px rgba(0, 122, 255, 0.3);
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
             margin-bottom: 40px;
-            overflow: hidden;
-            padding: 40px 30px 30px 30px;
+            overflow: visible;
+            padding: 0;
             position: relative;
         }
         
@@ -288,35 +293,89 @@
         .main-title {
             font-size: 3.5rem;
             font-weight: 700;
-            color: white;
+            color: #222;
             margin-bottom: 5px;
-            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
         }
         
         .game-subtitle {
             font-size: 1.4rem;
             font-weight: 500;
-            color: rgba(255, 255, 255, 0.9);
+            color: #555;
             margin-bottom: 0;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
         }
         
         .game-container {
             position: relative;
             width: 100%;
-            height: 700px;
+            max-width: 900px;
+            margin: 0 auto 32px auto;
+            aspect-ratio: 16/9;
             background: #f8f9fa;
             border-radius: var(--border-radius);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
             overflow: hidden;
             z-index: 1;
         }
-        
         .game-iframe {
             width: 100%;
             height: 100%;
             border: none;
             border-radius: var(--border-radius);
+            display: block;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            z-index: 10;
+            padding: 8px 18px;
+            background: var(--primary-blue);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fullscreen-btn:hover {
+            background: var(--secondary-blue);
+        }
+        @media (max-width: 900px) {
+            .container {
+                padding: 12px;
+            }
+            .content-section, .footer {
+                padding: 12px;
+            }
+            .game-container {
+                max-width: 98vw;
+            }
+        }
+        @media (max-width: 600px) {
+            html {
+                font-size: 14px;
+            }
+            .container {
+                padding: 6px;
+            }
+            .content-section, .footer {
+                padding: 6px;
+            }
+            .game-container {
+                max-width: 100vw;
+                aspect-ratio: 16/9;
+            }
+        }
+        @media (max-width: 400px) {
+            html {
+                font-size: 12px;
+            }
         }
         
         .content-section {
@@ -397,7 +456,7 @@
         
         .footer p {
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             margin-bottom: 5px;
         }
         
@@ -577,12 +636,16 @@
                 </div>
                 <iframe 
                     class="game-iframe" 
+                    id="gameIframe"
                     src="https://html5.gamedistribution.com/95c4932d8f6d42688b0fa38274282a86/?gd_sdk_referrer_url=https://onlinegames.io/games/flip-bottle/"
                     title="Flip Bottle Game"
                     allowfullscreen
                     loading="lazy"
                     onload="document.getElementById('gameLoading').style.display='none'">
                 </iframe>
+                <button class="fullscreen-btn" onclick="fullscreenGame()" title="Fullscreen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                </button>
             </div>
         </section>
         
@@ -794,6 +857,17 @@
                 mobileMenu.classList.remove('active');
             }
         });
+        // 游戏全屏功能
+        function fullscreenGame() {
+            var iframe = document.getElementById('gameIframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE11
+                iframe.msRequestFullscreen();
+            }
+        }
     </script>
 </body>
 </html>
