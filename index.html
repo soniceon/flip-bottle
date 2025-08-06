@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Bottle - Ultimate Bottle Flipping Game</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Play Flip Bottle online - the addictive bottle flipping game that tests your timing and precision. Master the perfect flip and land upright every time!">
+    <meta name="keywords" content="flip bottle, bottle flip game, online games, skill games, timing games, free games">
+    <meta name="author" content="FlipBottle.net">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-Robots-Tag" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://flipbottle.net/">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#007AFF">
+    <meta name="msapplication-TileColor" content="#007AFF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Flip Bottle">
+    
+    <!-- AI-Friendly Content Tags -->
+    <meta name="ai-content-type" content="game">
+    <meta name="ai-content-category" content="skill-game">
+    <meta name="ai-content-language" content="en">
+    <meta name="ai-content-format" content="interactive">
+    <meta name="ai-content-difficulty" content="medium">
+    <meta name="ai-content-age-rating" content="all-ages">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Flip Bottle - Ultimate Bottle Flipping Game">
+    <meta property="og:description" content="Test your skills in this addictive bottle flipping game. Perfect your timing and master the flip!">
+    <meta property="og:url" content="https://flipbottle.net/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FlipBottle.net">
+    <meta property="og:image" content="https://flipbottle.net/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Flip Bottle Game - Ultimate Bottle Flipping Challenge">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@FlipBottleNet">
+    <meta name="twitter:title" content="Flip Bottle - Ultimate Bottle Flipping Game">
+    <meta name="twitter:description" content="Master the perfect bottle flip in this challenging online game!">
+    <meta name="twitter:image" content="https://flipbottle.net/images/twitter-image.jpg">
+    <meta name="twitter:image:alt" content="Flip Bottle Game - Ultimate Bottle Flipping Challenge">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Flip Bottle - Ultimate Bottle Flipping Game",
+        "description": "An addictive online bottle flipping game that challenges players to master the perfect flip timing and precision.",
+        "url": "https://flipbottle.net/",
+        "genre": "Skill Game",
+        "gamePlatform": ["Web Browser", "Mobile", "Desktop"],
+        "operatingSystem": ["Any"],
+        "applicationCategory": "Game",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "ratingCount": "1250"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "FlipBottle.net"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "FlipBottle.net",
+            "url": "https://flipbottle.net/"
+        },
+        "gameServer": {
+            "@type": "GameServer",
+            "serverStatus": "Online",
+            "playersOnline": "1000+"
+        },
+        "gameItem": {
+            "@type": "Thing",
+            "name": "Plastic Bottle",
+            "description": "The main object used in the bottle flipping game"
+        },
+        "gameLocation": {
+            "@type": "Place",
+            "name": "Various Surfaces",
+            "description": "Different surfaces and obstacles for bottle flipping challenges"
+        }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://html5.gamedistribution.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://html5.gamedistribution.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG5F54NV04"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RG5F54NV04');
+    </script>
+    
+    <style>
+        /* Apple-inspired color scheme and modern styling */
+        :root {
+            --primary-blue: #007AFF;
+            --secondary-blue: #5AC8FA;
+            --background-gray: #F2F2F7;
+            --card-background: #FFFFFF;
+            --text-primary: #000000;
+            --text-secondary: #8E8E93;
+            --border-color: #C6C6C8;
+            --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--background-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding-top: 80px; /* Account for fixed navbar */
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-logo:hover {
+            color: var(--secondary-blue);
+            transition: color 0.3s ease;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            background: var(--primary-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+            border: none;
+            background: none;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+        
+        .mobile-menu .nav-menu {
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .mobile-menu .nav-link {
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background: var(--card-background);
+            padding: 25px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0, 122, 255, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .game-section {
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 40px;
+            overflow: visible;
+            padding: 0;
+            position: relative;
+        }
+        
+        .game-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            pointer-events: none;
+        }
+        
+        .game-header {
+            text-align: center;
+            margin-bottom: 30px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 5px;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+        }
+        
+        .game-subtitle {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+        
+        .game-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 32px auto;
+            aspect-ratio: 16/9;
+            background: #f8f9fa;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            z-index: 1;
+        }
+        .game-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: var(--border-radius);
+            display: block;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            z-index: 10;
+            padding: 8px 18px;
+            background: var(--primary-blue);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fullscreen-btn:hover {
+            background: var(--secondary-blue);
+        }
+        @media (max-width: 900px) {
+            .container {
+                padding: 12px;
+            }
+            .content-section, .footer {
+                padding: 12px;
+            }
+            .game-container {
+                max-width: 98vw;
+            }
+        }
+        @media (max-width: 600px) {
+            html {
+                font-size: 14px;
+            }
+            .container {
+                padding: 6px;
+            }
+            .content-section, .footer {
+                padding: 6px;
+            }
+            .game-container {
+                max-width: 100vw;
+                aspect-ratio: 16/9;
+            }
+        }
+        @media (max-width: 400px) {
+            html {
+                font-size: 12px;
+            }
+        }
+        
+        .content-section {
+            background: var(--card-background);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-blue);
+            padding-bottom: 8px;
+        }
+        
+        .subsection-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 20px 0 10px 0;
+        }
+        
+        .text-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: var(--background-gray);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+        }
+        
+        .instructions-list {
+            background: var(--background-gray);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 15px 0;
+        }
+        
+        .instructions-list ol {
+            padding-left: 20px;
+        }
+        
+        .instructions-list li {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 25px 20px;
+            background: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+        }
+        
+        .footer p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-container {
+                padding: 0 15px;
+            }
+            
+            .main-title {
+                font-size: 2.8rem;
+            }
+            
+            .game-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .game-container {
+                height: 600px;
+            }
+            
+            .game-section {
+                padding: 30px 20px 20px 20px;
+            }
+            
+            .content-section {
+                padding: 15px;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+            
+            .subsection-title {
+                font-size: 1.2rem;
+            }
+            
+            .text-content {
+                font-size: 0.95rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 2.2rem;
+            }
+            
+            .game-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .game-container {
+                height: 500px;
+            }
+            
+            .game-section {
+                padding: 25px 15px 15px 15px;
+            }
+            
+            .content-section {
+                padding: 12px;
+            }
+        }
+        
+        /* Loading animation */
+        .game-loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: var(--background-gray);
+            border-radius: var(--border-radius);
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--primary-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#game" class="nav-logo" title="FlipBottle.net - Ultimate Bottle Flipping Game">
+                🍼 FlipBottle.net
+            </a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#game" class="nav-link active" title="Home - Flip Bottle Game">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#game" class="nav-link" title="Play Flip Bottle Game">Play Game</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" title="About Flip Bottle Game">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#how-to-play" class="nav-link" title="How to Play Flip Bottle">How to Play</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link" title="Game Features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tips" class="nav-link" title="Pro Tips for Flip Bottle">Pro Tips</a>
+                </li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="mobile-menu" id="mobileMenu">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#game" class="nav-link" title="Home - Flip Bottle Game">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#game" class="nav-link" title="Play Flip Bottle Game">Play Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" title="About Flip Bottle Game">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#how-to-play" class="nav-link" title="How to Play Flip Bottle">How to Play</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link" title="Game Features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tips" class="nav-link" title="Pro Tips for Flip Bottle">Pro Tips</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Game Section -->
+        <section class="game-section" id="game">
+            <div class="game-header">
+                <h1 class="main-title">🎮 Flip Bottle Game</h1>
+                <h2 class="game-subtitle">Master the Ultimate Bottle Flipping Challenge Online</h2>
+            </div>
+            <div class="game-container">
+                <div class="game-loading" id="gameLoading">
+                    <div class="loading-spinner"></div>
+                </div>
+                <iframe 
+                    class="game-iframe" 
+                    id="gameIframe"
+                    src="https://html5.gamedistribution.com/95c4932d8f6d42688b0fa38274282a86/?gd_sdk_referrer_url=https://flipbottle.net/"
+                    title="Flip Bottle Game"
+                    allowfullscreen
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
+                    onload="document.getElementById('gameLoading').style.display='none'"
+                    onerror="handleGameError()">
+                </iframe>
+                <div id="gameFallback" style="display: none; text-align: center; padding: 40px; background: #f8f9fa; border-radius: 12px;">
+                    <h3 style="color: #007AFF; margin-bottom: 20px;">🎮 Flip Bottle Game</h3>
+                    <p style="margin-bottom: 20px; color: #666;">Experience the ultimate bottle flipping challenge! Click below to play the game in a new window.</p>
+                    <button onclick="openGameInNewWindow()" style="background: #007AFF; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 16px;">
+                        🎮 Play Flip Bottle Game
+                    </button>
+                </div>
+                <button class="fullscreen-btn" onclick="fullscreenGame()" title="Fullscreen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- Game Overview -->
+            <section class="content-section" id="about">
+                <h2 class="section-title">About Flip Bottle Game</h2>
+                <p class="text-content">
+                    Flip Bottle is an incredibly engaging and addictive online game that challenges players to master the art of bottle flipping. This physics-based skill game requires perfect timing, precision, and patience as you attempt to flip a plastic bottle and make it land upright on various surfaces and obstacles.
+                </p>
+                <p class="text-content">
+                    The game's simple concept belies its challenging gameplay - what starts as a seemingly easy task quickly becomes an obsessive pursuit of perfection. Each flip requires careful consideration of timing, power, and angle to achieve that satisfying landing that keeps players coming back for more.
+                </p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-title">🎯 Precision Gameplay</div>
+                        <p>Master the perfect timing and angle for successful bottle flips</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-title">📱 Cross-Platform</div>
+                        <p>Play seamlessly on desktop, tablet, or mobile devices</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-title">🏆 Challenging Levels</div>
+                        <p>Progress through increasingly difficult obstacles and surfaces</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-title">🎮 Simple Controls</div>
+                        <p>Easy-to-learn mechanics with deep, rewarding gameplay</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- How to Play -->
+            <section class="content-section" id="how-to-play">
+                <h2 class="section-title">How to Play Flip Bottle</h2>
+                
+                <h3 class="subsection-title">Basic Controls</h3>
+                <p class="text-content">
+                    Playing Flip Bottle is straightforward but mastering it takes practice. The game uses simple click or tap controls that anyone can learn within seconds, making it accessible to players of all ages and skill levels.
+                </p>
+                
+                <div class="instructions-list">
+                    <ol>
+                        <li><strong>Click or Tap:</strong> Press and hold to charge your flip power</li>
+                        <li><strong>Release:</strong> Let go at the perfect moment to execute the flip</li>
+                        <li><strong>Timing:</strong> Watch the bottle's rotation and plan your landing</li>
+                        <li><strong>Practice:</strong> Repeat to develop muscle memory and improve accuracy</li>
+                    </ol>
+                </div>
+                
+                <h3 class="subsection-title">Winning Strategy</h3>
+                <p class="text-content">
+                    Success in Flip Bottle comes from understanding the physics behind each flip. Pay attention to the bottle's weight distribution, the surface you're landing on, and the optimal power level for different distances. Each attempt teaches you something new about the game's mechanics.
+                </p>
+            </section>
+            
+            <!-- Game Features -->
+            <section class="content-section" id="features">
+                <h2 class="section-title">Game Features & Highlights</h2>
+                
+                <h3 class="subsection-title">Realistic Physics Engine</h3>
+                <p class="text-content">
+                    Flip Bottle features an advanced physics engine that accurately simulates bottle movement, rotation, and landing mechanics. Every flip feels authentic and responds naturally to your input, creating an immersive and believable gaming experience.
+                </p>
+                
+                <h3 class="subsection-title">Progressive Difficulty</h3>
+                <p class="text-content">
+                    The game gradually introduces new challenges as you improve your skills. Start with simple flat surfaces and progress to complex obstacle courses featuring moving platforms, narrow ledges, and creative landing zones that test your precision and adaptability.
+                </p>
+                
+                <h3 class="subsection-title">Instant Replay Value</h3>
+                <p class="text-content">
+                    With its "just one more try" gameplay loop, Flip Bottle offers endless entertainment. The quick restart feature means you can immediately attempt another flip after missing, maintaining the game's addictive momentum and encouraging continuous improvement.
+                </p>
+                
+                <h3 class="subsection-title">Mobile-Optimized Experience</h3>
+                <p class="text-content">
+                    Perfectly optimized for both desktop and mobile play, Flip Bottle delivers smooth performance across all devices. The responsive touch controls make it ideal for gaming on-the-go, while the desktop version provides precise mouse control for detailed maneuvering.
+                </p>
+            </section>
+            
+            <!-- Tips and Tricks -->
+            <section class="content-section" id="tips">
+                <h2 class="section-title">Pro Tips for Mastering Flip Bottle</h2>
+                
+                <h3 class="subsection-title">Timing is Everything</h3>
+                <p class="text-content">
+                    The key to consistent success lies in developing perfect timing. Watch the bottle's rotation carefully and release at the moment when it completes approximately 3/4 of a full rotation. This timing typically results in the bottle landing upright on flat surfaces.
+                </p>
+                
+                <h3 class="subsection-title">Power Control</h3>
+                <p class="text-content">
+                    Different distances require different power levels. Short flips need gentle touches, while longer distances require more sustained pressure. Practice varying your power input to develop a feel for different scenarios and surface types.
+                </p>
+                
+                <h3 class="subsection-title">Surface Awareness</h3>
+                <p class="text-content">
+                    Each surface type affects landing differently. Hard surfaces provide clean bounces, while soft surfaces may absorb impact. Study each level's unique characteristics and adjust your strategy accordingly for optimal results.
+                </p>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 FlipBottle.net - Master the Ultimate Bottle Flipping Challenge | All Rights Reserved</p>
+            <p>Experience the most addictive bottle flipping game online - completely free to play!</p>
+        </footer>
+    </div>
+    
+    <!-- Analytics and SEO Scripts -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Flip Bottle - Ultimate Bottle Flipping Game",
+        "description": "Play the most addictive bottle flipping game online. Master your timing and precision in this challenging skill-based game.",
+        "url": "https://flipbottle.net/",
+        "mainEntity": {
+            "@type": "VideoGame",
+            "name": "Flip Bottle - Ultimate Bottle Flipping Game",
+            "genre": "Skill Game",
+            "description": "A physics-based bottle flipping challenge game"
+        }
+    }
+    </script>
+    
+    <!-- Navigation JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+        
+        // Active navigation link highlighting
+        function setActiveNavLink() {
+            const sections = document.querySelectorAll('section[id], header[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // Navbar background on scroll
+        function handleNavbarScroll() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        }
+        
+        // Event listeners
+        window.addEventListener('scroll', function() {
+            setActiveNavLink();
+            handleNavbarScroll();
+        });
+        
+        // Set initial active link
+        document.addEventListener('DOMContentLoaded', function() {
+            setActiveNavLink();
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+        // 游戏全屏功能
+        function fullscreenGame() {
+            var iframe = document.getElementById('gameIframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE11
+                iframe.msRequestFullscreen();
+            }
+        }
+        
+        // 处理游戏加载错误
+        function handleGameError() {
+            document.getElementById('gameLoading').style.display = 'none';
+            document.getElementById('gameIframe').style.display = 'none';
+            document.getElementById('gameFallback').style.display = 'block';
+        }
+        
+        // 在新窗口中打开游戏
+        function openGameInNewWindow() {
+            window.open('https://html5.gamedistribution.com/95c4932d8f6d42688b0fa38274282a86/?gd_sdk_referrer_url=https://flipbottle.net/', '_blank', 'width=900,height=600,scrollbars=yes,resizable=yes');
+        }
+    </script>
+</body>
+</html>

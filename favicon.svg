@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="bottleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5AC8FA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="url(#bottleGradient)" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Bottle shape -->
+  <path d="M12 8 L12 6 C12 5 13 4 14 4 L18 4 C19 4 20 5 20 6 L20 8 L22 8 C23 8 24 9 24 10 L24 26 C24 27 23 28 22 28 L10 28 C9 28 8 27 8 26 L8 10 C8 9 9 8 10 8 Z" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Bottle cap -->
+  <rect x="14" y="6" width="4" height="2" fill="#FF9500" rx="1"/>
+  
+  <!-- Water level -->
+  <rect x="10" y="12" width="12" height="8" fill="#5AC8FA" opacity="0.6"/>
+  
+  <!-- Flip arrow -->
+  <path d="M16 2 L18 4 L16 6 M16 2 L14 4 L16 6" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
