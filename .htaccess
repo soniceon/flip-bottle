@@ -1,3 +1,14 @@
+# Canonical redirects (force HTTPS and non-www)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # Redirect www to non-www
+    RewriteCond %{HTTP_HOST} ^www\.flipbottle\.net$ [NC]
+    RewriteRule ^ https://flipbottle.net%{REQUEST_URI} [L,R=301]
+</IfModule>
+
 # Enable compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/plain
@@ -11,19 +22,13 @@
     AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
 
-# Set X-Robots-Tag header
+# Security and SEO headers
 <IfModule mod_headers.c>
     Header always set X-Robots-Tag "index, follow"
-    
-    # AI Crawler Optimization Headers
-    Header always set X-AI-Content-Type "game"
-    Header always set X-AI-Content-Category "skill-game"
-    Header always set X-AI-Content-Language "en"
-    Header always set X-AI-Content-Format "interactive"
-    
-    # JavaScript Rendering Support Headers
-    Header always set X-JavaScript-Enabled "true"
-    Header always set X-SPA-Application "true"
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options SAMEORIGIN
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
 # Cache control for static assets
@@ -36,27 +41,4 @@
     ExpiresByType image/jpeg "access plus 1 year"
     ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/svg+xml "access plus 1 year"
-</IfModule>
-
-# Security headers
-<IfModule mod_headers.c>
-    Header always set X-Content-Type-Options nosniff
-    Header always set X-Frame-Options DENY
-    Header always set X-XSS-Protection "1; mode=block"
-    Header always set Referrer-Policy "strict-origin-when-cross-origin"
-</IfModule>
-
-# JavaScript Rendering Support for Search Engines
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    
-    # Handle hash-based navigation for search engines
-    RewriteCond %{HTTP_USER_AGENT} (Googlebot|bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot) [NC]
-    RewriteCond %{QUERY_STRING} ^$
-    RewriteRule ^$ /index.html [L]
-    
-    # Pre-render support for hash fragments
-    RewriteCond %{HTTP_USER_AGENT} (Googlebot|bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot) [NC]
-    RewriteCond %{QUERY_STRING} _escaped_fragment_=(.*)
-    RewriteRule ^$ /index.html [L]
 </IfModule> 
