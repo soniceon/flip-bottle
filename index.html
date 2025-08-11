@@ -761,6 +761,8 @@
                     loading="lazy"
                     allow="autoplay; fullscreen; gamepad; encrypted-media; clipboard-write; cross-origin-isolated"
                     sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-pointer-lock allow-presentation"
+                    onload="document.getElementById('gameLoading').style.display='none'"
+                    onerror="handleGameError()"
                 ></iframe>
                 <div id="gameFallback" style="display: none; text-align: center; padding: 40px; background: #f8f9fa; border-radius: 12px;">
                     <h3 style="color: #007AFF; margin-bottom: 20px;">🎮 Flip Bottle Game</h3>
@@ -1022,6 +1024,15 @@
             document.getElementById('gameIframe').style.display = 'none';
             document.getElementById('gameFallback').style.display = 'block';
         }
+        
+        // Fallback timeout: show fallback if iframe doesn't load in time
+        setTimeout(function() {
+            var iframe = document.getElementById('gameIframe');
+            var loading = document.getElementById('gameLoading');
+            if (loading && loading.style.display !== 'none') {
+                handleGameError();
+            }
+        }, 12000);
         
         // Open game in new window
         function openGameInNewWindow() {
