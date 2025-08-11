@@ -12,6 +12,12 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-Robots-Tag" content="index, follow">
     
+    <!-- Pre-rendering and JavaScript Support -->
+    <meta name="fragment" content="!">
+    <meta name="prerender" content="true">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
     <!-- Canonical URL -->
     <link rel="canonical" href="https://flipbottle.net/">
     
@@ -38,7 +44,7 @@
     <meta property="og:url" content="https://flipbottle.net/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="FlipBottle.net">
-    <meta property="og:image" content="https://flipbottle.net/images/og-image.jpg">
+    <meta property="og:image" content="https://flipbottle.net/images/og-image.svg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Flip Bottle Game - Ultimate Bottle Flipping Challenge">
@@ -48,7 +54,7 @@
     <meta name="twitter:site" content="@FlipBottleNet">
     <meta name="twitter:title" content="Flip Bottle - Ultimate Bottle Flipping Game">
     <meta name="twitter:description" content="Master the perfect bottle flip in this challenging online game!">
-    <meta name="twitter:image" content="https://flipbottle.net/images/twitter-image.jpg">
+    <meta name="twitter:image" content="https://flipbottle.net/images/twitter-image.svg">
     <meta name="twitter:image:alt" content="Flip Bottle Game - Ultimate Bottle Flipping Challenge">
     
     <!-- Structured Data -->
@@ -96,6 +102,47 @@
             "@type": "Place",
             "name": "Various Surfaces",
             "description": "Different surfaces and obstacles for bottle flipping challenges"
+        },
+        "mainEntity": {
+            "@type": "WebPage",
+            "name": "Flip Bottle Game Sections",
+            "description": "Complete game with multiple sections including gameplay, about, how-to-play, features, and tips",
+            "url": "https://flipbottle.net/",
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Game",
+                        "item": "https://flipbottle.net/#game"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "About",
+                        "item": "https://flipbottle.net/#about"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "How to Play",
+                        "item": "https://flipbottle.net/#how-to-play"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Features",
+                        "item": "https://flipbottle.net/#features"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "Tips",
+                        "item": "https://flipbottle.net/#tips"
+                    }
+                ]
+            }
         }
     }
     </script>
@@ -854,6 +901,27 @@
     }
     </script>
     
+    <!-- Pre-rendering configuration -->
+    <script src="/prerender-config.js"></script>
+    
+    <!-- NoScript fallback for search engines -->
+    <noscript>
+        <div style="padding: 20px; text-align: center; background: #f5f5f5; margin: 20px;">
+            <h2>Flip Bottle Game</h2>
+            <p>This is an interactive bottle flipping game. Please enable JavaScript to play.</p>
+            <div style="margin-top: 20px;">
+                <h3>Game Sections:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>Game:</strong> Play the bottle flipping game</li>
+                    <li><strong>About:</strong> Learn about the game</li>
+                    <li><strong>How to Play:</strong> Game instructions and rules</li>
+                    <li><strong>Features:</strong> Game features and capabilities</li>
+                    <li><strong>Tips:</strong> Professional tips and strategies</li>
+                </ul>
+            </div>
+        </div>
+    </noscript>
+    
     <!-- Navigation JavaScript -->
     <script>
         // Mobile menu toggle
@@ -936,7 +1004,7 @@
                 mobileMenu.classList.remove('active');
             }
         });
-        // 游戏全屏功能
+        // Game fullscreen functionality
         function fullscreenGame() {
             var iframe = document.getElementById('gameIframe');
             if (iframe.requestFullscreen) {
@@ -948,14 +1016,14 @@
             }
         }
         
-        // 处理游戏加载错误
+        // Handle game loading errors
         function handleGameError() {
             document.getElementById('gameLoading').style.display = 'none';
             document.getElementById('gameIframe').style.display = 'none';
             document.getElementById('gameFallback').style.display = 'block';
         }
         
-        // 在新窗口中打开游戏
+        // Open game in new window
         function openGameInNewWindow() {
             window.open('https://html5.gamedistribution.com/95c4932d8f6d42688b0fa38274282a86/?gd_sdk_referrer_url=https://flipbottle.net/', '_blank', 'width=900,height=600,scrollbars=yes,resizable=yes');
         }

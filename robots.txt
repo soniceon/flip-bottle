@@ -31,4 +31,14 @@ Allow: /
 User-agent: AhrefsBot
 Allow: /
 
+# Pre-rendering support for hash fragments
+User-agent: Googlebot
+Allow: /?_escaped_fragment_=
+
+User-agent: Bingbot
+Allow: /?_escaped_fragment_=
+
+# Crawl delay for better indexing
+Crawl-delay: 1
+
 Sitemap: https://flipbottle.net/sitemap.xml 

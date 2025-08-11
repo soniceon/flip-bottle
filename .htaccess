@@ -20,6 +20,10 @@
     Header always set X-AI-Content-Category "skill-game"
     Header always set X-AI-Content-Language "en"
     Header always set X-AI-Content-Format "interactive"
+    
+    # JavaScript Rendering Support Headers
+    Header always set X-JavaScript-Enabled "true"
+    Header always set X-SPA-Application "true"
 </IfModule>
 
 # Cache control for static assets
@@ -40,4 +44,19 @@
     Header always set X-Frame-Options DENY
     Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# JavaScript Rendering Support for Search Engines
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Handle hash-based navigation for search engines
+    RewriteCond %{HTTP_USER_AGENT} (Googlebot|bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot) [NC]
+    RewriteCond %{QUERY_STRING} ^$
+    RewriteRule ^$ /index.html [L]
+    
+    # Pre-render support for hash fragments
+    RewriteCond %{HTTP_USER_AGENT} (Googlebot|bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot) [NC]
+    RewriteCond %{QUERY_STRING} _escaped_fragment_=(.*)
+    RewriteRule ^$ /index.html [L]
 </IfModule> 
