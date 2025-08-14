@@ -1,4 +1,19 @@
-# Open Graph Image Placeholder
-# This should be a 1200x630 JPG image for optimal social media sharing
-# The image should feature the Flip Bottle game with engaging visuals
-# Recommended content: bottle flipping animation, game interface, call-to-action 
+# Open Graph Image for Flip Bottle Game
+# This is a placeholder for the actual 1200x630 JPG image
+# 
+# The actual image should contain:
+# - Game title: "Flip Bottle Game"
+# - Visual elements: Bottle flipping animation or game interface
+# - Call-to-action: "Play Now" or "Start Game"
+# - Brand colors: #007AFF (primary blue)
+# - High contrast for social media visibility
+# - Engaging visuals that encourage clicks
+#
+# Recommended design:
+# - Background: Gradient from #007AFF to #5AC8FA
+# - Bottle icon: White bottle with blue water
+# - Text: Large, readable font in white
+# - Game elements: Physics-based visual indicators
+#
+# File should be saved as: og-image.jpg (1200x630px, JPG format)
+# This placeholder will be replaced with the actual image file 
