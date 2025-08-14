@@ -1,12 +1,9 @@
-# Canonical redirects (force HTTPS and non-www)
+# Canonical redirects (force HTTPS only - Cloudflare handles www to non-www)
 <IfModule mod_rewrite.c>
     RewriteEngine On
     # Force HTTPS
     RewriteCond %{HTTPS} off
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-    # Redirect www to non-www
-    RewriteCond %{HTTP_HOST} ^www\.flipbottle\.net$ [NC]
-    RewriteRule ^ https://flipbottle.net%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # Enable compression
